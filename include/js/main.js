@@ -17,7 +17,7 @@ $(document).ready(function(){
                 location.href = '/';
                 return;
             case 'report':
-                frame.attr('src', 'include/docs/work.pdf');
+                frame.attr('src', 'include/docs/curs.pdf');
                 break;
             case 'scene_0':
                 frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate');
