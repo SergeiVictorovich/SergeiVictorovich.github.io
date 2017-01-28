@@ -80,6 +80,14 @@ $(document).ready(function () {
         $info.toggleClass('_hidden');
         $self.toggleClass('active');
 
+        if (!$info.hasClass('_hidden')) {
+
+            setTimeout(function(){
+                $info.css('height', 'auto');
+            }, 300);
+
+        }
+
     }).on('click', '.js-awesome', function(){
 
         $('.threeD-awesome').slideToggle(300);
