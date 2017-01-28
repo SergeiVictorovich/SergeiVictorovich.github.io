@@ -21,13 +21,31 @@ $(document).ready(function () {
                 frame.attr('src', 'include/docs/curs.pdf');
                 break;
             case 'scene_0':
-                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate&fallback_image=/include/scenes/bg.jpg');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate');
                 break;
             case 'scene_1':
                 frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/final/final.json&no_social&autorotate');
                 break;
             case 'screensaver':
                 frame.attr('src', 'include/scenes/screensaver/index.html');
+                break;
+            case 'awesome_0':
+                frame.attr('src', 'https://www.blend4web.com/apps/webplayer/webplayer.html?load=../../assets/capri/props/watch_scene/watch_scene.json&autorotate&no_social&compressed_textures&compressed_textures_pvr');
+                break;
+            case 'awesome_1':
+                frame.attr('src', 'https://www.blend4web.com/apps/webplayer/webplayer.html?load=../../assets/capri/buildings/fountain_elephants/fountain_elephants.json&autorotate&compressed_textures&compressed_textures_pvr&no_social');
+                break;
+            case 'awesome_1.5':
+                frame.attr('src', 'https://www.blend4web.com/apps/webplayer/webplayer.html?load=../../assets/interactivity/solar_system/solar_system_ru.json&compressed_textures&compressed_textures_pvr&no_social');
+                break;
+            case 'awesome_2':
+                frame.attr('src', 'include/scenes/awesome/2/index.html');
+                break;
+            case 'awesome_3':
+                frame.attr('src', 'include/scenes/awesome/3/index.html');
+                break;
+            case 'awesome_4':
+                frame.attr('src', 'include/scenes/awesome/4/index.html');
                 break;
             default:
                 error = true;
@@ -62,10 +80,11 @@ $(document).ready(function () {
         $info.toggleClass('_hidden');
         $self.toggleClass('active');
 
-    });
+    }).on('click', '.js-awesome', function(){
 
+        $('.threeD-awesome').slideToggle(300);
 
-    $('.resources-btn').on('click', function () {
+    }).on('click', '.resources-btn', function () {
 
         $('.resources').slideToggle(300);
 

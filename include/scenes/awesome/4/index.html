@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-author {
+            position: absolute;
+            top: 10px;
+            left: 70px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            padding: 10px;
+            font-family: arial, serif;
+        }
+        .swiper-slide {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .swiper-author a {
+            color: white;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/Room_FinalHD.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/6827.html">Radya</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/bathroom_small.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/5357.html">SATtva</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/%D0%A1%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8F%20final_HD.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/7122.html">Radya</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/%D0%A1%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8F%20final_HD.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/7122.html">Radya</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/%D0%9B%D0%B8%D1%86%D0%BE.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/7297.html">DartLord</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/dart1.png" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/7466.html">Max4er</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/1280-Final.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/3852.html">ExeQt0r</a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img data-src="http://blender3d.org.ua/gallery/iwe/upload/Photobox.jpg" class="swiper-lazy">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="swiper-author">
+                Автор <a target="_blank" href="http://blender3d.org.ua/gallery/7033.html">Неизвестно</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-scrollbar"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        lazyLoading: true,
+        preloadImages: false,
+        zoom: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        scrollbar: '.swiper-scrollbar',
+        loop: true,
+        keyboardControl: true
+    });
+</script>
+</body>
+</html>
