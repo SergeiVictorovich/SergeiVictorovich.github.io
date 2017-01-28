@@ -21,10 +21,10 @@ $(document).ready(function () {
                 frame.attr('src', 'include/docs/curs.pdf');
                 break;
             case 'scene_0':
-                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate&compressed_textures&fallback_image=http://kinoino.com/uploads/thumbs/thumb.jpg');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate&fallback_image=/include/scenes/bg.jpg');
                 break;
             case 'scene_1':
-                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/final/final.json&no_social&autorotate&compressed_textures');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/final/final.json&no_social&autorotate');
                 break;
             case 'screensaver':
                 frame.attr('src', 'include/scenes/screensaver/index.html');
