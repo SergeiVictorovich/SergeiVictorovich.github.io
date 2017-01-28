@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+    var $container = $('.container-fluid');
+
     $('#bg').addClass('visible');
 
     $('.js-toggle').on('click', function () {
@@ -19,10 +21,10 @@ $(document).ready(function () {
                 frame.attr('src', 'include/docs/curs.pdf');
                 break;
             case 'scene_0':
-                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/first/curs.json&no_social&autorotate&compressed_textures&fallback_image=http://kinoino.com/uploads/thumbs/thumb.jpg');
                 break;
             case 'scene_1':
-                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/final/final.json&no_social&autorotate');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/final/final.json&no_social&autorotate&compressed_textures');
                 break;
             case 'screensaver':
                 frame.attr('src', 'include/scenes/screensaver/index.html');
@@ -39,11 +41,11 @@ $(document).ready(function () {
 
     });
 
-    var $info = $('.info-wrap');
+    var $info = $container.find('.info-wrap');
     var infoWidth = $info.width();
     var infoHeight = $info.height();
 
-    $('.info-wrap-hide').on('click', function () {
+    $container.on('click', '.info-wrap-hide', function () {
 
         var $self = $(this);
 
@@ -59,7 +61,6 @@ $(document).ready(function () {
 
         $info.toggleClass('_hidden');
         $self.toggleClass('active');
-
 
     });
 
