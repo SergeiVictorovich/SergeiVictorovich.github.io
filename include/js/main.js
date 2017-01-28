@@ -1,18 +1,17 @@
-
 'use strict';
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('#bg').addClass('visible');
 
-    $('.js-toggle').on('click', function(){
+    $('.js-toggle').on('click', function () {
 
         var action = $(this).data('action');
         var frame = $('#frame');
         var video = $('#bg');
         var error = false;
 
-        switch(action) {
+        switch (action) {
             case 'main':
                 location.href = '/';
                 return;
@@ -24,6 +23,9 @@ $(document).ready(function(){
                 break;
             case 'scene_1':
                 frame.attr('src', 'include/webplayer/webplayer.html?load=/include/scenes/final/final.json&no_social&autorotate');
+                break;
+            case 'screensaver':
+                frame.attr('src', 'include/scenes/screensaver/index.html');
                 break;
             default:
                 error = true;
@@ -41,7 +43,7 @@ $(document).ready(function(){
     var infoWidth = $info.width();
     var infoHeight = $info.height();
 
-    $('.info-wrap-hide').on('click', function(){
+    $('.info-wrap-hide').on('click', function () {
 
         var $self = $(this);
 
@@ -58,6 +60,13 @@ $(document).ready(function(){
         $info.toggleClass('_hidden');
         $self.toggleClass('active');
 
+
+    });
+
+
+    $('.resources-btn').on('click', function () {
+
+        $('.resources').slideToggle(300);
 
     });
 

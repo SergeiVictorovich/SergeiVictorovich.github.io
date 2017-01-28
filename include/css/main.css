@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: 'hide';
-    src: url('/include/css/fonts/hide.eot?73100328');
-    src: url('/include/css/fonts/hide.eot?73100328#iefix') format('embedded-opentype'),
-    url('/include/css/fonts/hide.woff2?73100328') format('woff2'),
-    url('/include/css/fonts/hide.woff?73100328') format('woff'),
-    url('/include/css/fonts/hide.ttf?73100328') format('truetype'),
-    url('/include/css/fonts/hide.svg?73100328#hide') format('svg');
+    src: url('../css/fonts/hide.eot?73100328');
+    src: url('../css/fonts/hide.eot?73100328#iefix') format('embedded-opentype'),
+    url('../css/fonts/hide.woff2?73100328') format('woff2'),
+    url('../css/fonts/hide.woff?73100328') format('woff'),
+    url('../css/fonts/hide.ttf?73100328') format('truetype'),
+    url('../css/fonts/hide.svg?73100328#hide') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -67,10 +67,6 @@ iframe {
 .info-title,
 .info-note {
     line-height: 1.3em;
-}
-
-.resource-link {
-    font-size: 12px;
 }
 
 #bg {
