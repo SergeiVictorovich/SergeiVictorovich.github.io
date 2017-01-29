@@ -88,13 +88,9 @@ $(document).ready(function () {
 
         }
 
-    }).on('click', '.js-awesome', function(){
+    }).on('click', '.info-title, .js-awesome, .resources-btn', function(){
 
-        $('.threeD-awesome').slideToggle(300);
-
-    }).on('click', '.resources-btn', function () {
-
-        $('.resources').slideToggle(300);
+        $(this).next().slideToggle(300);
 
     });
 

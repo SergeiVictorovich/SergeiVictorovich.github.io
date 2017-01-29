@@ -73,6 +73,10 @@ iframe {
     line-height: 1.3em;
 }
 
+.info-title a {
+    text-decoration: none;
+}
+
 #bg {
     position: fixed;
     top: 0;
@@ -135,7 +139,7 @@ iframe {
 }
 
 .btns-wrap {
-    margin: 15px 0;
+    padding: 15px 0;
 }
 
 .btn-default {
@@ -151,4 +155,8 @@ iframe {
 
 hr {
     border-color: #888;
+}
+
+.work-wrap {
+    display: none
 }
