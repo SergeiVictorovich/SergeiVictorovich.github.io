@@ -37,7 +37,9 @@ iframe {
 }
 
 .info-wrap {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 15px;
     z-index: 10;
     margin-top: 15px;
     max-width: 100%;
@@ -50,6 +52,8 @@ iframe {
     padding: 15px;
     -webkit-transition: height 0.4s, width 0.4s;
     transition: height 0.4s, width 0.4s;
+    overflow: auto;
+    max-height: 97%;
 }
 
 .info-inner {
