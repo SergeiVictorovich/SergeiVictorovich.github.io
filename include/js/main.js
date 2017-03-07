@@ -88,7 +88,7 @@ $(document).ready(function () {
 
         }
 
-    }).on('click', '.resources-btn', function () {
+    }).on('click', '.js-awesome, .resources-btn', function () {
 
         $(this).next().slideToggle(300);
 

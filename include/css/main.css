@@ -73,6 +73,10 @@ iframe {
     line-height: 1.3em;
 }
 
+.info-title {
+    margin-bottom: 20px;
+}
+
 .info-title a {
     text-decoration: none;
 }
@@ -138,13 +142,9 @@ iframe {
     content: '\e801';
 }
 
-.btns-wrap {
-    padding: 15px 0;
-}
-
 .btn-default {
     width: 100%;
-    margin-bottom: 7px;
+    margin: 3px 0;
 }
 
 .threeD-awesome {
