@@ -18,13 +18,13 @@ $(document).ready(function () {
                 location.href = '/';
                 return;
             case 'report':
-                frame.attr('src', '/cp/include/docs/curs.pdf');
+                frame.attr('src', 'include/docs/curs.pdf');
                 break;
             case 'scene_0':
-                frame.attr('src', 'cp/webplayer/webplayer.html?load=/cp/include/scenes/first/curs.json&no_social&autorotate');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/cp/include/scenes/first/curs.json&no_social&autorotate');
                 break;
             case 'scene_1':
-                frame.attr('src', 'cp/webplayer/webplayer.html?load=/cp/include/scenes/final/final.json&no_social&autorotate');
+                frame.attr('src', 'include/webplayer/webplayer.html?load=/cp/include/scenes/final/final.json&no_social&autorotate');
                 break;
             case 'screensaver':
                 frame.attr('src', 'include/scenes/screensaver/index.html');
