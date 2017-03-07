@@ -82,13 +82,13 @@ $(document).ready(function () {
 
         if (!$info.hasClass('_hidden')) {
 
-            setTimeout(function(){
+            setTimeout(function () {
                 $info.css('height', 'auto');
             }, 300);
 
         }
 
-    }).on('click', '.info-title, .js-awesome, .resources-btn', function(){
+    }).on('click', '.resources-btn', function () {
 
         $(this).next().slideToggle(300);
 
