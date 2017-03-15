@@ -2,7 +2,8 @@
 @font-face {
     font-family: 'hide';
     url('../fonts/hide.woff2?73100328') format('woff2'),
-    url('../fonts/hide.woff?73100328') format('woff');
+    url('../fonts/hide.woff?73100328') format('woff'),
+    url('../fonts/hide.svg?73100328#hide') format('svg');
     font-weight: normal;
     font-style: normal;
 }
