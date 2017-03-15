@@ -44,13 +44,14 @@
                     break;
                 case 'awesome_4':
                     frame.src = 'include/scenes/awesome/4/index.html';
-                    break;
+                    bg.style.display = '';
+                    return;
                 default:
                     alert('Документ не найден!');
                     return;
             }
 
-            bg.remove();
+            bg.style.display = 'none';
 
         });
 
