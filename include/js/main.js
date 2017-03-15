@@ -26,9 +26,6 @@ $(document).ready(function () {
             case 'scene_1':
                 frame.attr('src', 'include/webplayer/webplayer.html?load=/cp/include/scenes/final/final.json&no_social&autorotate');
                 break;
-            case 'screensaver':
-                frame.attr('src', 'include/scenes/screensaver/index.html');
-                break;
             case 'awesome_0':
                 frame.attr('src', 'https://www.blend4web.com/apps/webplayer/webplayer.html?load=../../assets/capri/props/watch_scene/watch_scene.json&autorotate&no_social&compressed_textures&compressed_textures_pvr');
                 break;
