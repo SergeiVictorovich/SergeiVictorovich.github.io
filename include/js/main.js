@@ -19,7 +19,7 @@
                     location.href = '/';
                     return;
                 case 'report':
-                    frame.src = 'include/docs/curs.pdf';
+                    frame.src = 'include/docs/info.pdf';
                     break;
                 case 'scene_0':
                     frame.src = 'include/webplayer/webplayer.html?load=/cp/include/scenes/first/curs.json&no_social&autorotate';
