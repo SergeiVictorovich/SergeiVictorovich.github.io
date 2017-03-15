@@ -1,12 +1,8 @@
 
 @font-face {
     font-family: 'hide';
-    src: url('../fonts/hide.eot?73100328');
-    src: url('../fonts/hide.eot?73100328#iefix') format('embedded-opentype'),
     url('../fonts/hide.woff2?73100328') format('woff2'),
-    url('../fonts/hide.woff?73100328') format('woff'),
-    url('../fonts/hide.ttf?73100328') format('truetype'),
-    url('../fonts/hide.svg?73100328#hide') format('svg');
+    url('../fonts/hide.woff?73100328') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -62,6 +58,11 @@ iframe {
     overflow: hidden;
     -webkit-transition: opacity 0.4s;
     transition: opacity 0.4s;
+}
+
+.info-wrap._hidden {
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .info-wrap._hidden .info-inner {
@@ -148,11 +149,24 @@ iframe {
 }
 
 .threeD-awesome {
-    display: none;
     margin: 15px auto;
     width: 80%;
 }
 
 hr {
     border-color: #888;
+}
+
+.slide-block {
+    opacity: 0;
+    overflow: hidden;
+    display: block;
+    max-height: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.slide-block.visible {
+    opacity: 1;
+    max-height: 300px;
 }
