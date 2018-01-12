@@ -1,6 +1,9 @@
 ; (function () {
 
     var bg = document.getElementsByClassName('bg')[0];
+    var info = document.getElementsByClassName('info-wrap')[0];
+    var width;
+    var height;
 
     bg.classList.add('visible');
 
@@ -15,10 +18,6 @@
         });
 
     });
-
-    var info = document.getElementsByClassName('info-wrap')[0];
-    var width;
-    var height;
 
     document.getElementsByClassName('info-wrap-hide')[0].addEventListener('click', function () {
 
