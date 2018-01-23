@@ -178,3 +178,9 @@ hr {
 .slide-block > li:first-child {
     margin-top: 10px;
 }
+
+@media screen and (max-width: 460px) {
+    .info-wrap {
+        width: calc(100% - 30px);
+    }
+}
