@@ -6,7 +6,6 @@
     var height;
 
     bg.classList.add('visible');
-    bg.play();
 
     [].forEach.call(document.getElementsByClassName('js-toggle'), function (elem) {
         elem.addEventListener('click', function () {
