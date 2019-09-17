@@ -1,2 +1,1 @@
-Демонстрация возможностей [Blender](https://www.blender.org/) вкупе с инструментом для экспорта трехмерной графики в формат WebGL -
-[blend4web](https://www.blend4web.com/), галерея работ профессиональных художников.
+Demonstration of [Blender](https://www.blender.org/) capabilities, coupled with a tool for exporting 3D graphics to WebGL format - [blend4web](https://www.blend4web.com/), gallery of works by professional artists
